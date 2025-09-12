@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>First Name</label>
+            <input type="text" placeholder="firstname">
+        </div>
+
+        <div>
+            <label>Last Name</label>
+            <input type="text" placeholder="lastName">
+        </div>
+
+        <div>
+            <label>Age</label>
+            <input type="number" min="1" max="100" step="10">
+        </div>
+
+        <div>
+            <label for="passwordInput">password</label>
+            <input type="password" id="passwordInput" name="password">
+        </div>
+
+        <div>
+            <label for="">Gender</label>
+            <input type="radio" value="male" name="gender"> Male
+            <input type="radio" value="female" name="gender"> Female
+            <input type="radio" value="do not want to specify" name="gender"> NA
+        </div>
+
+        <div>
+            <label for="newLetterConfirmation">Subscribe</label>
+            <input type="checkbox" id="newLetterConfirmation" name="newsletter" value="yes">
+        </div>
+
+        <textarea name="bio" id="bioId" cols="30" rows="10" placeholder="I am a readonly textarea" maxlength="100" readonly></textarea>
+
+        <label for="countrySelectBox">Country</label>
+        <select name="country" id="countrySelectBox">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="russia">Russia</option>
+        </select>
+
+        <select name="cars" id="">
+            <optgroup label="German Cars">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+            </optgroup>
+            <optgroup label="Japanese Cars">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
