@@ -1,0 +1,15 @@
+/* li:first-child {
+    color: green;
+}
+
+li:last-child {
+    color: green;
+} */
+
+ul:first-child li:first-child {
+    color: green;
+}
+
+ul:last-child li:last-child {
+    color: green;
+}

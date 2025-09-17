@@ -1,0 +1,31 @@
+/* h1 {
+    color: pink;
+} */
+
+
+/* hexadecimal */
+/* h1 {
+    color: #c24e62;
+
+    color: rgb(174, 32, 32);
+
+    color: rgba(255, 0, 0, 0.1);
+} */
+
+html, body {
+    /* forcefully take 100% of the screen! */
+    height: 100%;
+    margin: 0
+}
+
+body {
+    /* background-color: lightblue; */
+
+    background-image: url("https://images.unsplash.com/photo-1757778718372-a286a1662798");
+    /* look at the center */
+    background-position: center;
+    /* zoom out the image */
+    background-size: cover;   
+    /* only 1 image in the screen */
+    background-repeat: no-repeat;
+}

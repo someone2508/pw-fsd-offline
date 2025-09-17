@@ -1,0 +1,33 @@
+
+
+
+
+p::after {
+    content: "------------ this is suppose to be added after!";
+}
+
+p::before {
+    content: "I am the begining: ------------ ";
+}
+
+/* p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkred;
+} */
+
+/* p::first-line {
+    font-weight: bold;
+    color: blue;
+} */
+
+
+p::selection {
+    background: yellow;
+    color: black;
+}
+
+input::placeholder {
+    color: darkred;
+    font-size: 14px;
+}

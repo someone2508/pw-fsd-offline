@@ -1,0 +1,29 @@
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    text-indent: -5%;
+}
+
+.letterSpacing {
+    letter-spacing: -0.1px;
+}
+
+.lineHeight {
+    /* line-height: 2; multipler */      
+    /* line-height: 150%; percetage */
+    line-height: 25px;
+}
+
+.textTransformation {
+    text-transform: lowercase; 
+}

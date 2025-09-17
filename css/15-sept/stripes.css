@@ -1,0 +1,16 @@
+ul {
+    background-color: black;
+}
+
+li:nth-child(odd) {
+    color: pink;
+}
+
+li:nth-child(even) {
+    color: white
+}
+
+
+li:nth-child(5) {
+    color: grey
+}

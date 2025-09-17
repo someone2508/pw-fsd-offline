@@ -1,0 +1,64 @@
+/* h1 {
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    color: grey;
+}
+ */
+
+#secondHeading {
+    color: red;
+}
+
+#secondParagraph {
+    text-align: center;
+}
+
+
+#f {
+    color: grey;
+}
+
+#s {
+    color: grey;
+}
+
+#t {
+    color: grey;
+}
+
+.goodLookingPara {
+    color: grey;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* grouping selectors */
+p, h1 {
+    font-family: Arial;
+}
+
+/* pseudo classes */
+a:hover {
+    color: red;
+}
+
+input:focus {
+    border: 5px solid red;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: green;
+}
+
+p::after {
+    content: " True Sign!";
+}

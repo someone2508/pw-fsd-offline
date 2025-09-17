@@ -1,0 +1,70 @@
+
+
+/* 
+button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+a:active {
+    color: orange;
+} */
+
+/* a:active {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+button:active {
+    background-color: black;
+    color: white;
+} */
+
+
+a:visited {
+    color: darkgreen;   /* visited */
+}
+
+a:link {
+    color: red;     /* not visited */
+}
+
+/* div p:first-child {
+    color: red;
+}
+
+div p:last-child {
+    color: blue;
+} */
+
+/* div p:nth-child(odd) {
+    color: green;
+}
+
+div p:nth-child(even) {
+    color: red;
+} */
+
+
+div p:nth-child(3n) {
+    color: green;
+}
+
+#substringStyle {
+    color: blue;
+}
+
+p:first-of-type {
+    color: chocolate;
+}
+
+input[type="checkbox"]:checked {
+    outline: 10px solid red;
+}
+
+input[type="checkbox"]:checked + label {
+    color: green
+}
