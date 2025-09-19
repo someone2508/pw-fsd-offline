@@ -24,6 +24,10 @@ td, th, table {
     border: 2px solid black;
 }
 
+table {
+    margin-top: 20px;
+}
+
 #rahulTd {
     padding: 20px;
 }

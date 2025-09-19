@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Overflow</title>
+    <style>
+        .demo {
+            border: 1px dashed #ccc;
+            padding: 12px;
+            margin: 12px 0;
+            min-height: 120px;
+        }
+
+        .box {
+            padding: 12px;
+            border: 1px solid #ddd;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow & z-index</h1>
+
+    <div id="exercise">
+        <!-- default behaviour -->
+        <!-- <div class="demo">
+            <strong>Overflow: default</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow: visible;">
+                <div style="background: #ffd; padding: 6px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet nulla sequi, enim doloremque cumque autem praesentium voluptas aliquam, voluptates ab dolores odit, in voluptatem exercitationem? Aliquam iste quia cupiditate.
+                </div>
+            </div>
+        </div> -->
+
+        <!-- hide your overflow -->
+        <!-- <div class="demo">
+            <strong>Overflow: Hidden</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow: hidden;">
+                <div style="background: #ffd; padding: 6px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet nulla sequi, enim doloremque cumque autem praesentium voluptas aliquam, voluptates ab dolores odit, in voluptatem exercitationem? Aliquam iste quia cupiditate.
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="demo">
+            <strong>Overflow: Scroll</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow: scroll;">
+                <div style="background: #ffd; padding: 6px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet nulla sequi, enim doloremque cumque autem praesentium voluptas aliquam, voluptates ab dolores odit, in voluptatem exercitationem? Aliquam iste quia cupiditate.
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="demo" style="width: 420px;">
+            <strong>Horizontal Scroll</strong>
+
+            <div style="display: flex; gap: 10px; overflow-x: scroll; border: 1px solid #000; height: 100px;">
+                <div class="box">CARD 1</div>
+                <div class="box">CARD 2</div>
+                <div class="box">CARD 3</div>
+                <div class="box">CARD 4</div>
+                <div class="box">CARD 1</div>
+                <div class="box">CARD 2</div>
+                <div class="box">CARD 3</div>
+                <div class="box">CARD 4</div>
+            </div>
+        </div> -->
+
+
+        <div class="demo" style="width: 360px;">
+            <!-- fixed window on top -->
+            <div style="padding: 10px; border: 1px solid #f6f6f6;">
+                Header (Fixed)
+            </div>
+
+            <!-- scrollable window in middle -->
+            <!-- overflow-x and overflow-y behaves like overflow: auto -->
+            <div style="height: 150px; overflow: auto; display: flex;">
+                <div class="box">Messsage 1</div>
+                <div class="box">Messsage 2</div>
+                <div class="box">Messsage 3</div>
+                <div class="box">Messsage 4</div>
+                <div class="box">Messsage 5</div>
+                <div class="box">Messsage 6</div>
+                <div class="box">Messsage 7</div>
+                <div class="box">Messsage 8</div>
+                <div class="box">Messsage 9</div>
+                <div class="box">Messsage 10</div>
+            </div>
+
+            <!-- fixed window on bottom -->
+            <div style="padding: 10px; border: 1px solid #f6f6f6;">
+                Footer (Fixed)
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
