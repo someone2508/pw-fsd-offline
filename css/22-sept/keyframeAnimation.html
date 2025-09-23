@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KeyFrame Animation</title>
+
+    <style>
+        .loader {
+            width: 50px;
+            height: 50px;
+            background-image: url("https://images.unsplash.com/photo-1758505617057-ac02aab2d79b");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            10% { transform: scale(1.299); }
+            50% { transform: scale(1.5); }
+            70% { transform: scale(1.1);}
+            100% { transform: scale(1); }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

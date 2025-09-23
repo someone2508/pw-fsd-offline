@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Transition</title>
+
+    <style>
+        button {
+            /* padding: 10px; ---- all 4 sides same padding */
+            /* padding: 10px 15px 20px 30px; ---- give different padding on top, bottom, left, right */
+            padding: 10px 10px;  /* same padding horizontal and same padding vertical */
+
+
+            font-size: 18px;
+            background: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            /* transition: all 1s ease-in 1s; */
+            /*     
+                all: defines that all the properties in the hover should effect
+                1s: the time to be take for the properties to effect
+                ease-in-out: defines the delay happen when (move-in || move-out)
+                1s: defines delay before start of the transition
+            */
+
+            transition: background 0.5s ease-in 1s, transform 1s ease-in-out 1s;
+
+            /* background => 0.5s, in = 1s */
+            /* transform => 1s in & out 1s */
+        }
+
+        button:hover {
+            background: tomato;
+            transform: scale(1.5);
+        }
+    </style>
+
+</head>
+<body>
+    <button>Hover Me!</button>
+</body>
+</html>

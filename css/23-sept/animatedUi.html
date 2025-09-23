@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        .btn-gradient {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            /* background-clip: text;             */
+            transition: opacity 0.3s;
+        }
+
+        .btn-gradient:hover {
+            opacity: 0.8;
+        }
+
+        .btn-outline {
+            padding: 12px 24px;
+            border: 2px solid #333;
+            background: transparent;
+            color: #333;
+            border-radius: 6px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn-outline:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-icon {
+            padding: 18px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: dodgerblue;
+            color: white;
+            font-size: 16px;
+            transition: transform 0.5s;
+        }
+
+        .btn-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-loading {
+            background-color: #3e743e;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-loading::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 3px dotted white;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn-gradient">Sign Up</button> <br><br>
+
+    <button class="btn-outline">Learn More</button> <br><br>
+
+    <button class="btn-icon">🔍 Search</button> <br><br>
+
+    <button class="btn-loading">Loading</button>
+</body>
+</html>
