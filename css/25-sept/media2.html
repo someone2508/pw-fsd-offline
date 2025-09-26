@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 'header header header header header header',
+                                 'leftBar mainContent mainContent mainContent mainContent rightBar',
+                                 'footer footer footer footer footer footer';
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .container > div {
+            padding: 10px;
+        }
+
+        .div1 {
+            grid-area: header;
+        }
+
+        .div2 {
+            grid-area: leftBar;
+        }
+
+        .div2 li {
+            padding: 8px;
+            margin-bottom: 7px;
+        }
+
+        .div3 {
+            grid-area: mainContent;
+        }
+
+        .div4 {
+            grid-area: rightBar;
+        }
+
+        .div4 > h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .div4 li {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .div5 {
+            grid-area: footer;
+            text-align: center;
+            color: black;
+            /* background-color: teal; */
+        }
+
+        @media only screen and (max-width: 600px) {     /* 0 PX - 599 PX */
+            .div1 {
+                grid-area: 1 / span 6;
+            }
+            .div2 {
+                grid-area: 2 / span 6;
+            }
+            .div3 {
+                grid-area: 3 / span 6;
+            }
+            .div4 {
+                grid-area: 4 / span 6;
+            }
+            .div5 {
+                grid-area: 5 / span 6;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {     /* 600 PX - 800 PX */
+            .div1 {
+                grid-area: 1 / span 6;
+            }
+
+            .div2 {
+                grid-area: 2 / span 1;
+            }
+
+            .div3 {
+                grid-area: 2 / span 5;
+            }
+
+            .div4 {
+                grid-area: 3 / span 6;
+            }
+
+            .div5 {
+                grid-area: 4 / span 6;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {     /* 800 - 1400 */
+            .div1 {
+                grid-area: 1 / span 6;
+            }
+            .div2 {
+                grid-area: 2 / span 1;
+            }
+            .div3 {
+                grid-area: 2 / span 4;
+            }
+            .div4 {
+                grid-area: 2 / span 1;
+            }
+            .div5 {
+                grid-area: 3 / span 6;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h1>Header</h1>
+        </div>
+        
+        <div class="div2">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    
+        <div class="div3">
+            <h1>Content Heading</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore illum ipsa facilis, dolore, ipsum vero repellendus vitae impedit perspiciatis voluptatem vel quasi dicta inventore corporis alias recusandae, praesentium harum doloremque exercitationem! Dolorem error veniam ad vitae, totam ipsam aperiam itaque, quibusdam temporibus animi eveniet quae nesciunt? Recusandae explicabo voluptates delectus!</p>
+        </div>
+        
+        <div class="div4">
+            <h2>Right Heading</h2>
+            <ul>
+                <li>Right Item 1</li>
+                <li>Right Item 2</li>
+                <li>Right Item 3</li>
+            </ul>
+        </div>
+    
+        <div class="div5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, non cum ad nisi suscipit debitis eos alias amet hic unde!</p>
+        </div>
+    </div>
+</body>
+</html>

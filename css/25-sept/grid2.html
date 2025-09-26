@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid 2</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        .container > div {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: 1 / span 2;
+        }
+
+        .item2 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+
+        .item5 {
+            grid-column: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">item 1</div>
+        <div class="item2">item 2</div>
+        <div class="item3">item 3</div>
+        <div class="item4">item 4</div>
+        <div class="item5">item 5</div>
+    </div>
+</body>
+</html>
