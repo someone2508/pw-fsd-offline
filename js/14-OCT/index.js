@@ -1,15 +1,15 @@
-console.log([] == []);
+// console.log([] == []);
 
-console.log({} == {});
+// console.log({} == {});
 
 // // console.log(1 == 1);
 
 
-let a = [];
+// let a = [];
 
-let b = a;
+// let b = a;
 
-console.log(a == b);
+// console.log(a == b);
 
 // // console.log('' == '');
 
@@ -34,10 +34,20 @@ console.log(a == b);
 
 
 
-console.log(true == []);
+// console.log(true == []);
 
 
 
 
 
-console.log(true == ![]);
+// console.log(true == ![]);
+
+
+console.log(1 == 1);
+
+console.log([] == []);
+
+
+// 1, 1.1, true, ""
+
+// [], {}, func

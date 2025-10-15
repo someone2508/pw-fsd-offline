@@ -41,3 +41,32 @@ switch(day) {
     default:
         console.log("No clue!");
 }
+
+
+let x = 2;
+
+if(x == 1) {
+    console.log("One!");
+} else if(x == 2) {
+    console.log("Two!");
+} else if(x == 3) {
+    console.log("Three!");
+} else if(x == 4) {
+    console.log("Four");
+} else {
+    console.log("I do not know!");
+}
+
+switch(x) {
+    case 1:
+        console.log("One!");
+        break;
+    case 2:
+        console.log("Two!");
+    case 3:
+        console.log("Three");
+    case 4:
+        console.log("Four!");
+    default:
+        console.log("I do not know!");
+}
