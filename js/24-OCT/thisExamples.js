@@ -26,7 +26,7 @@
 
 // obj2.greet();
 
-// function expression: the this inside it, refers to the same function itself.
+// function expression: the this inside it, refers to the global obj.
 
 
 
